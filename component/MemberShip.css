@@ -1,0 +1,17 @@
+.memberShip-component{
+    display: flex;
+    background-color: #222222;
+    border-bottom: solid #d4a742 4px;
+    gap: 200px;
+}
+
+.suite-image{
+    object-fit: cover;
+    height: 500px;
+    /* max-width: 100%; */
+}
+
+.memberShip-image{
+    width: 57%;
+    max-width: 100%;
+}

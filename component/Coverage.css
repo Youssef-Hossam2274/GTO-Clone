@@ -1,0 +1,19 @@
+.coverage-component{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #222222;
+    padding: 20px 0;
+    border-bottom: solid #d4a742 5px;
+}
+.coverage-title{
+    color: #d4a742 ;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.coverage-component img{
+    width: 60%;
+    /* width: 859.219px; */
+    max-width: 100%;
+}

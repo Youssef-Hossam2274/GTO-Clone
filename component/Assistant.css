@@ -1,0 +1,56 @@
+.assistant-component{
+    display:flex;
+    width: 100%;
+    background-color: #222222;
+    padding: 30px 0;
+    justify-content: center;
+    gap: 16px;
+    border-bottom: solid #d4a742 4px;
+    margin-inline: auto;
+}
+
+.team-information{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 40%;
+}
+
+.team-information-title{
+    color: #d4a742;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.team-information-description{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+.personal-information{
+    width: auto;
+    border: solid #d4a742 1px;
+    border-radius: 30px;
+    padding: 20px 20px;
+    line-height: 40px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.team-image{
+    width: 50%;
+}
+
+@media (max-width : 800px){
+    .assistant-component{
+        flex-direction: column;
+    }
+    .team-information{
+        width: 100%;
+        padding-inline: 10px;
+    }
+    .team-image img{
+        width: 100%;
+    }
+}

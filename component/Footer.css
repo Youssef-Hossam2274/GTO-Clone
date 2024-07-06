@@ -1,0 +1,147 @@
+.footer-component{
+    background-color: rgb(17, 17, 17);
+    display: flex;
+    flex-direction: column;
+}
+
+.upper-box{
+    display: flex;
+    padding: 35px 0px;
+    color: #d4a742;
+    justify-content: center;
+    gap: 50px;
+}
+
+
+.upper-box .title{
+    color: white;
+    font-size: 14px;
+}
+
+.upper-box a{
+    padding-bottom: 12px;
+    font-size: 12px;
+    line-height: 31px;
+    transition: 0.3s;
+    border-bottom-style: solid;
+    border-bottom-color: #d4a742;
+    border-bottom-width: 1px;
+}
+
+.upper-box a:hover{
+    color: white;
+}
+
+.upper-box .title::before{
+    display: inline-block;
+    content: "";
+    width: 3px;
+    height: 12px;
+    background-color: #d4a742;
+    margin-right: 10px;
+}
+
+
+.gto-logo{
+    width: 200px;
+    height: 80px;
+}
+
+.main-menu{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    gap: 32px;
+}
+
+.main-menu-links{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.top-menu{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    gap: 32px;    
+}
+
+.top-menu-links{
+    display: flex;
+    flex-direction: column;
+}
+
+.top-menu-links a .svg-inline--fa {
+    display: inline-block;
+    margin-right: 5px; 
+    width: 10px;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about p{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 40px;
+    width: 100%;
+}
+
+
+/* down footer  */
+
+.down-box{
+    display: flex;
+    background-color: rgb(34, 34, 34);
+    padding: 12px;
+    /* justify-content: center; */
+    justify-content: space-around;
+    color: #d4a742;
+    font-size: 11px;
+    font-weight: 400;
+    gap: 500px;
+}
+
+.footer-right-box{
+    display: flex;
+}
+
+.footer-right-box a{
+    display: flex;
+    transition: 0.2s;
+    margin-right: 10px;
+
+}
+
+.footer-right-box a:hover{
+    color: white;
+}
+
+
+@media (max-width: 1050px){
+    .down-box{
+        gap: 200px;
+    }
+}
+
+@media (max-width: 867px){
+    .down-box{
+        flex-direction: column-reverse;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .upper-box{
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-menu, .top-menu, .about{
+        width: 100%;
+        padding-inline: 30px;
+    }
+
+}
