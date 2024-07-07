@@ -4,7 +4,7 @@ import Image from 'next/image'
 import memberShip from "../images/test.svg"
 import "./MemberShip.css"
 
-export default function MemberShip() {
+export default function MemberShipBenefits() {
     return (
         <div className='memberShip-component'>
             <Image className='suite-image'  src={suite} alt='suite'/>

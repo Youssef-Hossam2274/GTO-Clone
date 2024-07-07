@@ -1,0 +1,63 @@
+.OrganisationMembership-component{
+    position: relative;
+    overflow: hidden;
+    height: 380px;
+    background-image: url("../images/golden-card.svg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 100% 0;
+    border-bottom: solid #d4a742 4px;
+}
+.OrganisationMembership-component img{
+    position: relative;
+    top: -230px;
+    width: 100%;
+    object-fit: cover;
+}
+.organisation-text-box{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    width: 40%;
+    height: 100%;
+    z-index: 2;
+    justify-content: center;
+    padding-inline: 10px;
+}
+.organisation-title{
+    color: #d4a742;
+    font-size: 20px;
+}
+
+.organisation-description{
+    line-height: 30px;
+    font-size: 15px;
+}
+
+@media (max-width: 960px){
+    .OrganisationMembership-component{
+        background-image: none;
+        height: auto;
+    }
+    .OrganisationMembership-component img{
+        display: none;
+    }
+    .organisation-text-box{
+        position: relative;
+        width: 100%;
+        background-color: #222222;
+        padding-block: 30px;
+        gap: 20px;
+    }
+    .organisation-title{
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .organisation-description{
+        font-size: 18px;
+        line-height: 35px;
+    }
+
+
+}
