@@ -21,9 +21,10 @@
 }
 .imgSlider{
     position: relative;
-    top: -100px;
     animation-name: image-scale-down;
     animation-duration: 4s;
+    object-fit: cover;
+    height: inherit;
 }
 
 .next-prev{
@@ -201,8 +202,6 @@
 
 .slider-titles{
     position: relative;
-    /* top: 200px; */
-    /* left: 25%; */
     font-size: 50px;
     font-weight: 600;
     z-index: 3;
@@ -249,7 +248,7 @@
 
 
 /* phone screen */
-@media (max-width: 867px) {
+@media (max-width: 650px) {
     .description-box, .rectangle-slider, .dots{
         display: none;
     }
