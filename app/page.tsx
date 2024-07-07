@@ -10,7 +10,7 @@ export default function Home() {
     <div>
       <div className={style.content}>
         <ImageSlider/>
-        <MemberShip/>
+        {/* <MemberShip/> */}
         <Coverage/>
         <Assistant/>
       </div>

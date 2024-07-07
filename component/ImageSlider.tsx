@@ -27,7 +27,7 @@ let IMAGES = [
     {
         id: 2,
         img: img2,
-        title:"40% Discount On Any HotelWorldWide",
+        title:"40% Discount On Any Hotel WorldWide",
         description:"As a GTO member you can enjoy up to 40% discount on the lowest online price you can find on major websites for Hotels & Serviced Apartments WorldWide"
     },
     {
@@ -116,11 +116,13 @@ export default function ImageSlider() {
                                         <Image src={smallArrow} alt='smallArrow' style={{width : "20px"}}/>
                                     </div>
                                 </div>
-                                <div className="slider-titles">
-                                    {img.title}
-                                </div>
-                                <div className="slider-description">
-                                    Become a member & receive generous discounts<br/> on the lowest  online prices
+                                <div className="slider-text">
+                                    <p className="slider-titles">
+                                        {img.title}
+                                    </p>
+                                    <p className="slider-description">
+                                        Become a member & receive generous discounts<br/> on the lowest  online prices
+                                    </p>
                                 </div>
                             </>
                         )
@@ -129,8 +131,8 @@ export default function ImageSlider() {
             }
 
             <div className="next-prev">
-                <span className='next-arrow' onClick={nextIdx}><Image src={arrow} alt='arrow'/></span>
                 <span className='prev-arrow' onClick={prevIdx}><Image src={arrow} alt='arrow'/></span>
+                <span className='next-arrow' onClick={nextIdx}><Image src={arrow} alt='arrow'/></span>
             </div>
             <div className="dots">
                     {
