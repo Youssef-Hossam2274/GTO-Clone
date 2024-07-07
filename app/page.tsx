@@ -4,6 +4,7 @@ import ImageSlider from "@/component/ImageSlider";
 import Coverage from "@/component/Coverage";
 import Assistant from "@/component/Assistant";
 import OrganisationMembership from "@/component/OrganisationMembership"
+import DownloadMobile from "@/component/DownloadMobile";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <OrganisationMembership/>
         <Coverage/>
         <Assistant/>
+        <DownloadMobile/>
       </div>
     </div>
   );
