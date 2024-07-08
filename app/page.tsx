@@ -5,6 +5,7 @@ import Coverage from "@/component/Coverage";
 import Assistant from "@/component/Assistant";
 import OrganisationMembership from "@/component/OrganisationMembership"
 import DownloadMobile from "@/component/DownloadMobile";
+import HomeCart from "@/component/HomeCart";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <OrganisationMembership/>
         <Coverage/>
         <Assistant/>
+        <HomeCart/>
         <DownloadMobile/>
       </div>
     </div>
