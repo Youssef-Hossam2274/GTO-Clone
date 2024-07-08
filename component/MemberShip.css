@@ -2,16 +2,36 @@
     display: flex;
     background-color: #222222;
     border-bottom: solid #d4a742 4px;
-    gap: 200px;
+    gap: 150px;
 }
 
 .suite-image{
+    color: transparent;
     object-fit: cover;
     height: 500px;
-    /* max-width: 100%; */
 }
 
 .memberShip-image{
-    width: 57%;
+    color: transparent;
+    width: 800px;
     max-width: 100%;
+}
+
+@media (max-width: 1180px){
+    .memberShip-component{
+        gap:0;
+    }
+    .suite-image{
+        height: 400px;
+    }
+    .memberShip-image{
+        width: 700px;
+    }
+}
+
+@media (max-width: 870px) {
+    .suite-image{
+        display: none;
+    }
+    
 }

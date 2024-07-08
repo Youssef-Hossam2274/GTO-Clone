@@ -60,14 +60,13 @@ export default function HomeCart() {
             {
                 CARTS.map((cartDetail) => {
                     return (
-                    <div key={cartDetail.id}>
                         <Cart
                         title={cartDetail.title}
                         image={cartDetail.image}
                         id={cartDetail.id}
                         cartObj={cartDetail}
+                        key={cartDetail.id}
                         />
-                    </div>
                     );
             })
             }
@@ -78,7 +77,7 @@ export default function HomeCart() {
 }
 
 const Cart = (props: CartProps) => {
-    const { id, image, title,cartObj } = props;
+    const { id, image, title} = props;
 
     return (
     <div className="cart-component">

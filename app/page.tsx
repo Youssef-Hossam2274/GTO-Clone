@@ -16,7 +16,7 @@ export default function Home() {
         <ImageSlider/>
         <OrganisationMembership/>
         <GtoNumbers/>
-        {/* <MemberShipBenefits/> */}
+        <MemberShipBenefits/>
         <Coverage/>
         <Assistant/>
         <HomeCart/>

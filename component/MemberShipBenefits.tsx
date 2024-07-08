@@ -7,8 +7,8 @@ import "./MemberShip.css"
 export default function MemberShipBenefits() {
     return (
         <div className='memberShip-component'>
-            <Image className='suite-image'  src={suite} alt='suite'/>
-            <Image className='memberShip-image'  src={memberShip} alt='memberShip'/>
+            <Image className="suite-image" src={suite} alt='suite'/>
+            <Image className="memberShip-image"  src={memberShip} alt='memberShip'/>
         </div>
     )   
 }
