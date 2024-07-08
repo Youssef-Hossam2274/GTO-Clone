@@ -6,6 +6,8 @@ import Assistant from "@/component/Assistant";
 import OrganisationMembership from "@/component/OrganisationMembership"
 import DownloadMobile from "@/component/DownloadMobile";
 import HomeCart from "@/component/HomeCart";
+import GtoNumbers from "@/component/GtoNumbers";
+import MemberShipBenefits from "@/component/MemberShipBenefits";
 
 export default function Home() {
   return (
@@ -13,6 +15,8 @@ export default function Home() {
       <div className={style.content}>
         <ImageSlider/>
         <OrganisationMembership/>
+        <GtoNumbers/>
+        {/* <MemberShipBenefits/> */}
         <Coverage/>
         <Assistant/>
         <HomeCart/>

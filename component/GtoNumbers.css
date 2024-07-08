@@ -1,0 +1,27 @@
+.gtoNumbers-component{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #222222;
+    border-bottom: solid #d4a742 4px;
+    /* justify-content: center; */
+    align-items: center;
+    padding-block: 40px;
+}
+
+.gtoNumbers-title{
+    color: #d4a742;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.gtoNumbers-parag1, .gtoNumbers-parag2{
+    text-align: center;
+    font-size: 43px;
+    font-weight: 600;
+    line-height: 75px;
+}
+
+.gtoNumbers-component span{
+    color: #d4a742;
+}
