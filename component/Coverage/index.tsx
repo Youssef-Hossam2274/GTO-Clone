@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
-import coverageImage from "../images/our-coverage.svg"
-import "../component/Coverage.css"
+import coverageImage from "@/images/our-coverage.svg"
+import "./styles.css"
 
 export default function Coverage() {
     return (

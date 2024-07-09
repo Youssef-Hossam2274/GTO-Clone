@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from "next/image"
-import gray_eagle from "../images/gray-eagle.svg"
-import "./OrganisationMembership.css"
+import gray_eagle from "@/images/gray-eagle.svg"
+import "./styles.css"
 
 export default function OrganisationMembership() {
     return (

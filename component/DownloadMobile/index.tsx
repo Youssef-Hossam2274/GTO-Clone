@@ -3,7 +3,7 @@ import Image from "next/image";
 import googlePlay from "@/images/download-google-play.svg"
 import appStore from "@/images/download-app-store.svg"
 import gtoMobile from "@/images/gto-mobile.svg"
-import "./DownloadMobile.css"
+import "./styles.css"
 
 export default function DownloadMobile() {
     return (

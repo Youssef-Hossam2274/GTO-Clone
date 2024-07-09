@@ -1,5 +1,5 @@
 import React from 'react'
-import "./GtoNumbers.css"
+import "./styles.css"
 
 export default function GtoNumbers() {
     return (

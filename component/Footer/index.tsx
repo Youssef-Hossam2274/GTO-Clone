@@ -1,10 +1,10 @@
 import React from 'react';
-import "./Footer.css";
+import "./styles.css";
 import Link from "next/link";
 import Image from "next/image"
-import gto_logo from "../images/gto-logo.png"
-import inHouse from "../images/InHouse.png"
-import visa from "../images/visa.svg"
+import gto_logo from "@/images/gto-logo.png"
+import inHouse from "@/images/InHouse.png"
+import visa from "@/images/visa.svg"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWallet, faRightToBracket, faUser } from '@fortawesome/free-solid-svg-icons';
 

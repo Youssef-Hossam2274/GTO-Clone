@@ -1,6 +1,6 @@
 import React from "react";
 import Image, { StaticImageData } from "next/image";
-import "./HomeCart.css";
+import "./styles.css";
 import cartImg1 from "@/images/home-cart-1.jpg";
 
 interface CartProps {

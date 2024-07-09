@@ -3,13 +3,11 @@
 import React, {useState} from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
-import gto_logo from "../images/gto-logo.png";
-import EMER from "../images/EMER.svg";
-import etisalat from "../images/etisalat.png";
-import "./NavBar.css";
-import navBarIcon from "../images/navbar-menu.svg";
+import gto_logo from "@/images/gto-logo.png";
+import EMER from "@/images/EMER.svg";
+import etisalat from "@/images/etisalat.png";
+import "./styles.css";
+import navBarIcon from "@/images/navbar-menu.svg";
 
 
 export default function NavBar() {

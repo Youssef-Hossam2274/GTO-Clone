@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Step.css"
+import "./styles.css"
 import Image, {StaticImageData} from "next/image"
 
 

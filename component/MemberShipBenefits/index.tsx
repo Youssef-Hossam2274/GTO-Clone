@@ -1,8 +1,8 @@
 import React from 'react'
-import suite from "../images/suite.svg"
+import suite from "@/images/suite.svg"
 import Image from 'next/image'
-import memberShip from "../images/test.svg"
-import "./MemberShip.css"
+import memberShip from "@/images/test.svg"
+import "./styles.css"
 
 export default function MemberShipBenefits() {
     return (

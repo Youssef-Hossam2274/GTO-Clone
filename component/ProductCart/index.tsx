@@ -1,6 +1,6 @@
 import React from 'react';
 import Image, {StaticImageData} from "next/image";
-import "./ProductCart.css"
+import "./styles.css"
 
 interface ProductCartProps {
     id: number;

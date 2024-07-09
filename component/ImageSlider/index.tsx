@@ -1,17 +1,17 @@
 'use client'
 import React, {useState, useEffect} from 'react'
 import Image from 'next/image';
-import "./ImageSlider.css";
-import img1 from "../images/home-slider-1.jpg";
-import img2 from "../images/home-slider-2.jpg";
-import img3 from "../images/home-slider-3.jpg";
-import img4 from "../images/home-slider-4.jpg";
-import img5 from "../images/home-slider-5.jpg";
-import img6 from "../images/home-slider-6.jpg";
-import img8 from "../images/home-slider-8.jpg";
-import img9 from "../images/home-slider-9.jpg";
-import arrow from "../images/prevArrow.svg";
-import smallArrow from "../images/smallArrow.svg"
+import "./styles.css";
+import img1 from "@/images/home-slider-1.jpg";
+import img2 from "@/images/home-slider-2.jpg";
+import img3 from "@/images/home-slider-3.jpg";
+import img4 from "@/images/home-slider-4.jpg";
+import img5 from "@/images/home-slider-5.jpg";
+import img6 from "@/images/home-slider-6.jpg";
+import img8 from "@/images/home-slider-8.jpg";
+import img9 from "@/images/home-slider-9.jpg";
+import arrow from "@/images/prevArrow.svg";
+import smallArrow from "@/images/smallArrow.svg"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { width } from '@fortawesome/free-solid-svg-icons/fa0';

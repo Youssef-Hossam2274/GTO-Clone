@@ -1,7 +1,8 @@
 import React from 'react';
-import "./Assistant.css";
+import "./styles.css";
 import Image from 'next/image';
-import assistantImage from "../images/personal-travel-img-one.svg"
+// import assistantImage from "../images/personal-travel-img-one.svg"
+import assistantImage from "@/images/personal-travel-img-one.svg"
 
 export default function Assistant() {
     return (
