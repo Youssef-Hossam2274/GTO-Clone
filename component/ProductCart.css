@@ -1,0 +1,65 @@
+.ProductCart-component{
+    display: flex;
+    position: relative;
+    border: solid #d4a742 5px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.ProductCart-slider{
+    position: absolute;
+    z-index: 0;
+    display: flex;
+    height: 100%;
+    width: 200%;
+    transition: all 0.9s;
+}
+
+
+.background-cover{
+    position: relative;
+    display: flex;
+    height: 100%;
+    width: 50%;
+}
+.background-cover img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.banner{
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    z-index: 2;
+    background-color: rgba(34, 34, 34, 0.7);
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.background-details{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-inline: 20px;
+    justify-content: center;
+    background-color: #000;
+    height: 100%;
+    width: 50%;
+    border-radius: 10px;
+}
+
+.background-title{
+    color: #d4a742;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 600;
+}
+
+.background-description{
+    color: white;
+    font-size: 15px;
+}
