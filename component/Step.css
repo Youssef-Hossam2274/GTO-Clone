@@ -1,0 +1,54 @@
+.step-component{
+    display: flex;
+    gap: 50px;
+    width: 100%;
+    max-width: 740px;
+    margin-inline: auto;
+    transition: 1s;
+}
+
+.step-image{
+    display: flex;
+    width: 30%;
+    object-fit: contain;
+    position: relative;
+    transition: all 0.5s;
+}
+.step-image:hover{
+    cursor: pointer;
+    top: 20px;
+}
+
+.step-text{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 65%;
+}
+
+.step-title{
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 40px;
+    color: #d4a742;
+}
+
+.step-description{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+
+@media (max-width: 770px){
+    .step-component{
+        width: 100%;
+        max-width: 100%;
+    }
+    .step-image{
+        width: 200px;
+    }
+    .step-text{
+        width: 80%;
+    }
+}

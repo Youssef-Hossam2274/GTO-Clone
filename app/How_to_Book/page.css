@@ -1,0 +1,36 @@
+.how-to-book-page{
+    background-color: #222222;
+    padding-block: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+
+}
+
+.steps-title{
+    text-align: center;
+    color: #d4a742;
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: 700;
+}
+
+
+.all-steps{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+
+.direction-2 .step-component{
+    flex-direction: row-reverse;
+}
+
+
+@media (max-width: 770px){
+    .all-steps .step-component{
+        align-items: center;
+        flex-direction: column;
+    }
+}
