@@ -1,0 +1,71 @@
+.luxury-product-page{
+    padding-block: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    background-color: #222222;
+}
+
+.luxury-product-text{
+    display: flex;
+    flex-direction: column;
+    max-width: 1120px;
+    width: calc(100% - 20px);
+    margin-inline: auto;
+    gap: 20px;
+}
+
+.luxury-product-title{
+    color: #d4a742;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.luxury-product-description{
+    color: #fff;
+    font-size: 14px;
+    line-height: 28px;
+}
+
+.luxury-all-carts .ProductCart-component{
+    height:calc(1140px/3 - 20px);
+}
+
+.luxury-all-carts{
+    display: flex;
+    flex-wrap:wrap;
+    gap: 20px;
+    justify-content: center;
+    background-color: #222222;
+    max-width: 1140px;
+    width: 100%;
+    margin-inline: auto;
+}
+
+.luxury-one, .luxury-two{
+    width: calc(100%/2 - 10px);
+}
+
+.luxury-one .ProductCart-slider{
+    flex-direction: row-reverse;
+    left: -100%;
+}
+.luxury-one .ProductCart-slider:hover{
+    left: 0;
+}
+
+.luxury-two .ProductCart-slider{
+    left: 0;
+}
+.luxury-two .ProductCart-slider:hover{
+    left: -100%;
+}
+
+
+
+@media (max-width : 770px){
+    .luxury-one, .luxury-two{
+        width: 100%;
+        height: 100%;
+    }
+}
