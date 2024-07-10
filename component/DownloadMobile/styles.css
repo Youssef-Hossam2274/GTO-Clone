@@ -13,6 +13,7 @@
         flex-direction: column;
         gap: 20px;
         margin: 0;
+        padding-inline: 10px;
     }
 }
 .download-description{
