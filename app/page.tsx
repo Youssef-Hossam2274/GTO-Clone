@@ -12,14 +12,14 @@ import MemberShipBenefits from "@/component/MemberShipBenefits";
 export default function Home() {
   return (
     <div>
-      <div className={style.content}>
+      <div className={style.homePage}>
         <ImageSlider/>
         <OrganisationMembership/>
         <GtoNumbers/>
         <MemberShipBenefits/>
         <Coverage/>
-        <Assistant/>
         <HomeCart/>
+        <Assistant/>
         <DownloadMobile/>
       </div>
     </div>
