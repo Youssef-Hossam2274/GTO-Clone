@@ -11,11 +11,7 @@ import img6 from "@/images/home-slider-6.jpg";
 import img8 from "@/images/home-slider-8.jpg";
 import img9 from "@/images/home-slider-9.jpg";
 import arrow from "@/images/prevArrow.svg";
-import smallArrow from "@/images/smallArrow.svg"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
-import { width } from '@fortawesome/free-solid-svg-icons/fa0';
-
+import smallArrow from "@/images/smallArrow.svg";
 
 let IMAGES = [
     {
@@ -121,7 +117,7 @@ export default function ImageSlider() {
                                         {img.title}
                                     </p>
                                     <p className="slider-description">
-                                        Become a member & receive generous discounts<br/> on the lowest  online prices
+                                        Become a member & receive generous discounts on the lowest  online prices
                                     </p>
                                 </div>
                             </>
@@ -135,20 +131,19 @@ export default function ImageSlider() {
                 <span className='next-arrow' onClick={nextIdx}><Image src={arrow} alt='arrow'/></span>
             </div>
             <div className="dots">
-                    {
-                        IMAGES.map((img) =>{
-                            return(
-                                <div className="dot-number" key={img.id}>
-                                    <div className= {img.id-1 == imageIdx ? "dot active" : "dot"} key={img.id} onClick={()=>setImageIdx(img.id-1)}>
-                                    </div>
-                                    {
-                                        img.id-1 == imageIdx ? `0${img.id}`:""
-                                    }
+                {
+                    IMAGES.map((img) =>{
+                        return(
+                            <div className="dot-number" key={img.id}>
+                                <div className= {img.id-1 == imageIdx ? "dot active" : "dot"} key={img.id} onClick={()=>setImageIdx(img.id-1)}>
                                 </div>
-                            )
-                        })
-                    }
-
+                                {
+                                    img.id-1 == imageIdx ? `0${img.id}`:""
+                                }
+                            </div>
+                        )
+                    })
+                }
             </div>
         </div>
     )
