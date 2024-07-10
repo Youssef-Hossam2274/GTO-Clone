@@ -1,19 +1,35 @@
 .assistant-component{
-    display:flex;
-    width: 100%;
     background-color: #222222;
-    padding: 30px 0;
-    justify-content: center;
+    border-bottom: solid #d4a742 5px;
+}
+
+.assistant-bigBox{
+    display:flex;
+    max-width: 1140px;
+    width: 100%;
+    padding-block: 40px;
     gap: 16px;
-    border-bottom: solid #d4a742 4px;
-    margin-inline: auto;
+    margin-inline: auto; 
+    padding-inline: 10px;
+}
+
+@media (max-width : 770px){
+    .assistant-bigBox{
+        flex-direction: column;
+    }
 }
 
 .team-information{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    width: 40%;
+    width: 50%;
+}
+@media (max-width : 770px){
+    .team-information{
+        width: 100%;
+        padding-inline: 10px;
+    }
 }
 
 .team-information-title{
@@ -39,17 +55,10 @@
 }
 
 .team-image{
-    width: 40%;
+    width: 50%;
 }
 
-@media (max-width : 800px){
-    .assistant-component{
-        flex-direction: column;
-    }
-    .team-information{
-        width: 100%;
-        padding-inline: 10px;
-    }
+@media (max-width : 770px){
     .team-image img{
         width: 100%;
         height: 100%;
