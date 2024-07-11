@@ -1,0 +1,26 @@
+.termsCondition-component{
+    background-color: #222222;
+    padding-block: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.termsCondition-title{
+    font-size: 15px;
+    font-weight: 700;
+    max-width: 1140px;
+    width: 95%;
+    margin-inline: auto;
+}
+
+.all-terms{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 1140px;
+    width: 95%  ;
+    margin-inline: auto;
+    font-size: 14px;
+    line-height: 30px;
+}

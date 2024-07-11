@@ -53,11 +53,11 @@ export default function Footer() {
                 </div>
                 
                 <div className="footer-right-box">
-                    <Link href="/">Terms & Conditions|</Link>
-                    <Link href="/">Privacy Policy|</Link>
-                    <Link href="/">Delivery Policy|</Link>
-                    <Link href="/">Refund Policy|</Link>
-                    <Link href="/">FAQs</Link>
+                    <Link href="Terms_Conditions">Terms & Conditions|</Link>
+                    <Link href="Privacy_Policy">Privacy Policy|</Link>
+                    <Link href="Delivery_Policy">Delivery Policy|</Link>
+                    <Link href="Refund_Policy">Refund Policy|</Link>
+                    <Link href="FAQs">FAQs</Link>
                 </div>
             </div>
         </div>

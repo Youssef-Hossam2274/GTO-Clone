@@ -1,0 +1,25 @@
+.privacyPolicy-component{
+    background-color: #222222;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-block: 50px;
+}
+
+.privacyPolicy-title{
+    max-width: 800px;
+    width: 95%;
+    margin-inline: auto;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.all-Privacy{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 800px;
+    width: 95%;
+    margin-inline: auto;
+    font-size: 15px;
+}
