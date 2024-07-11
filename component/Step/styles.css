@@ -7,13 +7,28 @@
     transition: 1s;
 }
 
+@media (max-width: 770px){
+    .step-component{
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
 .step-image{
     display: flex;
     width: 30%;
     object-fit: contain;
     position: relative;
+    top: 0;
     transition: all 0.5s;
 }
+
+@media (max-width: 770px){
+    .step-image{
+        width: 200px;
+    }
+}
+
 .step-image:hover{
     cursor: pointer;
     top: 20px;
@@ -24,6 +39,11 @@
     flex-direction: column;
     gap: 30px;
     width: 65%;
+}
+@media (max-width: 770px){
+    .step-text{
+        width: 80%;
+    }
 }
 
 .step-title{
@@ -37,18 +57,4 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 30px;
-}
-
-
-@media (max-width: 770px){
-    .step-component{
-        width: 100%;
-        max-width: 100%;
-    }
-    .step-image{
-        width: 200px;
-    }
-    .step-text{
-        width: 80%;
-    }
 }

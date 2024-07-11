@@ -1,0 +1,49 @@
+.how-to-join-page{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    margin-inline: auto;
+    padding-block: 70px;
+    background-color: #222222;
+    color: #fff;
+}
+
+.howToJoin-title{
+    color: #d4a742;
+    font-size: 23px;
+    line-height: 40px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.howToJoinPage-description{
+    display: flex;
+    margin-inline: auto;
+    flex-direction: column;
+    max-width: 840px;
+    width: 70%;
+    gap: 40px;
+}
+
+.howToJoinPage-description ul{
+    display: flex;
+    flex-direction: column;
+    gap: min(2.0833333333vw, 40px);
+    list-style-type: disc;
+}
+
+.howToJionAllCart{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    max-width: 1140px;
+    margin-inline: auto;
+}
+
+@media (max-width: 770px) {
+    .howToJionAllCart{
+        flex-direction: column;
+        gap: 40px;
+    }
+}
