@@ -108,13 +108,15 @@
 
 .footer-right-box{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 10px;
+    column-gap: 5px;
 }
 
 .footer-right-box a{
     display: flex;
     transition: 0.2s;
-    margin-right: 10px;
-
 }
 
 .footer-right-box a:hover{
