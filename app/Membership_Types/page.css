@@ -1,0 +1,10 @@
+.member-ship-type-page{
+    background-color: #222222;
+    color: white;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}

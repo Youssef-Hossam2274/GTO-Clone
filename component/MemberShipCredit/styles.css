@@ -1,0 +1,51 @@
+.memberShipCredit-component{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.memberShipCredit-title{
+    color: #d4a742;
+    font-size: 23px;
+    font-weight: 700;
+    width: 100%;
+    text-align: right;
+    padding-right: 50px;
+}
+
+@media(max-width: 700px){
+    .memberShipCredit-title{
+        font-size: min(1.6666666667vw,32px);
+        line-height: min(2.0833333333vw,40px);
+    }
+}
+
+.credits{
+    display: flex;
+    width: 100%;
+    gap: 150px;
+    gap: calc((80% - 45% - 50px)/4);
+    justify-content: right;
+    padding-right: 50px;
+}
+
+.single-credit{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: calc(45%/4);
+    text-align: center;
+}
+
+.credit-title{
+    color: #d4a742;
+    font-size: 20px;
+    font-weight: 700;
+    width: 100%;
+}
+@media(max-width: 700px){
+    .credit-title{
+        font-size: min(1.6666666667vw,32px);
+        line-height: min(2.0833333333vw,40px);
+    }
+}
