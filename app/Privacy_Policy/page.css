@@ -4,6 +4,7 @@
     flex-direction: column;
     gap: 40px;
     padding-block: 50px;
+    color: white;
 }
 
 .privacyPolicy-title{

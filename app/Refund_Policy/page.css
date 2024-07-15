@@ -4,6 +4,7 @@
     flex-direction: column;
     padding-block: 50px;
     gap: 25px;
+    color: white;
 }
 
 .refundPolicy-title{
