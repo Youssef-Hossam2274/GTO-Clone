@@ -1,0 +1,55 @@
+.yellowBar-component{
+    display: flex;
+    background-color: #d4a742;
+    padding-block: 10px;
+    padding-inline: 30px;
+    justify-content: right;
+    gap: 20px;
+    color: black;
+}
+
+@media (max-width : 770px){
+    .yellowBar-component{
+        justify-content: space-between;
+        gap: 0;
+    }
+}
+
+@media (max-width: 450px){
+    .yellowBar-component{
+        padding-inline: 0;
+    }
+}
+
+.part{
+    display: flex;
+    flex-direction: row;
+    transition: 0.3s;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.part:hover{
+    color: white;
+}
+
+.part img{
+    color: white;
+}
+
+.part .svg-inline--fa {
+    height: 15px;
+}
+
+.selectOption{
+    display: flex;
+    flex-direction: row;
+    padding: 3px;
+    border: solid #000000a4 1px;
+    border-radius: 10px;
+    background-color: transparent;
+    font-size: 13px;
+}
