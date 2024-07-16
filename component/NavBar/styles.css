@@ -8,6 +8,13 @@
     border-bottom-color: #d4a742;
     border-bottom-width: 1px;
     position: relative;
+    transition: 0.5s;
+    overflow: hidden;
+    /* height: fit-content; */
+    height: 130px;
+}
+.nav-bar-component.mobile{
+    height: 400px;
 }
 
 .nav-fullScreen{
@@ -24,13 +31,13 @@
     flex-direction: column;
     align-items: center ;
     gap: 40px;
+    transition: 1s;
 }
 
 .bar-icon{
     font-size: 25px;
     color: #3f444b;
     cursor: pointer;
-    margin-top: -60px;
     display: none;
 }
 
@@ -43,7 +50,13 @@
     background-color: #fff;
     color: #000;
     margin-bottom: 30px;
+    opacity: 0;
+    transition: 0.5s;
 }
+.mobile-links.active{
+    opacity: 1;
+}
+
 .mobile-links a{
     padding: 10px 20px;
     text-align: left;
@@ -54,6 +67,11 @@
 }
 
 .mobile-links a:hover{
+    color: white;
+    background-color: #3f444b;
+}
+
+.mobile-links a:focus{
     color: white;
     background-color: #3f444b;
 }

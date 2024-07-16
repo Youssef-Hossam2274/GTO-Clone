@@ -11,8 +11,20 @@ import navBarIcon from "@/images/navbar-menu.svg";
 
 
 export default function NavBar() {
-    let [mobileLink, setMobileLinks] = useState(false);
-
+    let mobileLink = false;
+    const toggle = ()=>{
+        mobileLink = !mobileLink;
+        const navBar = document.querySelector(".nav-bar-component");
+        const mobile_links =document.querySelector(".mobile-links");
+        if(mobileLink === true){
+            navBar?.classList.add("mobile");
+            mobile_links?.classList.add("active");
+        }
+        else{
+            mobile_links?.classList.remove("active");
+            navBar?.classList.remove("mobile");
+        }
+    }
     return (
         <div className='nav-bar-component'>
             <div className="nav-fullScreen">
@@ -50,17 +62,14 @@ export default function NavBar() {
                 </div>
             </div>
             <div className="mobile-holder">
-                <Image src={navBarIcon} className="bar-icon" alt='navBaricon' onClick={() => setMobileLinks(!mobileLink)} />
-                {mobileLink && (
-                    <div className="mobile-links">
-                        <Link href="Discounted_Products">Discounted Products</Link>
-                        <Link href="Luxury_Products">Luxury Products</Link>
-                        <Link href="Membership_Types">Membership Types</Link>
-                        <Link href="How_to_Book">How to Book</Link>
-                        <Link href="How_to_join">How to join</Link>
-                    </div>
-                )}
-
+                <Image src={navBarIcon} className="bar-icon" alt='navBaricon' onClick={toggle}/>
+                <div className="mobile-links">
+                    <Link href="Discounted_Products">Discounted Products</Link>
+                    <Link href="Luxury_Products">Luxury Products</Link>
+                    <Link href="Membership_Types">Membership Types</Link>
+                    <Link href="How_to_Book">How to Book</Link>
+                    <Link href="How_to_join">How to join</Link>
+                </div>
             </div>
         </div>
     );
