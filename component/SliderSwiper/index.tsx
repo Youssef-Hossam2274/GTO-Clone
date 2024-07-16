@@ -106,7 +106,7 @@ export default function SliderSwiper() {
         IMAGES.map(sliderDetail =>{
           return(
             <SwiperSlide key={sliderDetail.id}>
-              <div className="rectangle-slider"></div>
+              <div id="rectangle-slider"></div>
               <Image id="imageSlider" src={sliderDetail.img} alt='img'/>
               <div id="description-box">
                   <p id='description'>

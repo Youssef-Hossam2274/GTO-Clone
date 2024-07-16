@@ -138,7 +138,7 @@
 
     }
 }
-.swiper-slide-active .rectangle-slider{
+.swiper-slide-active #rectangle-slider{
     position: absolute;
     width: 300px;
     width: 20%;
