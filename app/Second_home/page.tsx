@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <div>
       <div className={style.homePage}>
-        <SliderSwiper/>
+        <ImageSlider/>
         <OrganisationMembership/>
         <GtoNumbers/>
         <MemberShipBenefits/>
