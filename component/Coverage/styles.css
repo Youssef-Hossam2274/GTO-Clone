@@ -8,13 +8,7 @@
     border-bottom: solid #d4a742 5px;
 }
 .coverage-title{
-    color: #d4a742 ;
-    /* font-size: 25px; */
-    font-size: 2vw;
-    font-weight: bold;
-}
-
-.coverage-component img{
-    width: 60%;
-    max-width: 100%;
+    color: #d4a742;
+    font-size: 23px;
+    font-weight: 700;
 }
