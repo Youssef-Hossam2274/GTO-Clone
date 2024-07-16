@@ -16,7 +16,7 @@ export default function Home() {
     <div>
       <div className={style.homePage}>
         <SliderSwiper/>
-        <ImageSlider/>
+        {/* <ImageSlider/> */}
         <OrganisationMembership/>
         <GtoNumbers/>
         <MemberShipBenefits/>

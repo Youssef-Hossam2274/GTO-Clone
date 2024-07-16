@@ -1,5 +1,5 @@
 "use client";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import { Navigation, Pagination, A11y,EffectFade } from "swiper/modules";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
@@ -21,6 +21,7 @@ import img9 from "@/images/home-slider-9.jpg";
 import arrow from "@/images/prevArrow.svg";
 import { Autoplay } from "swiper/modules";
 import { useEffect, useState } from "react";
+import smallArrow from "@/images/smallArrow.svg";
 
 let IMAGES = [
   {
@@ -82,53 +83,54 @@ let IMAGES = [
 ];
 
 export default function SliderSwiper() {
-  //   const [first, setfirst] = useState(false);
-
-  //   useEffect(() => {
-  //     setTimeout(() => {
-  //       setfirst(true);
-  //     }, 200);
-  //   }, [first]);
-
-//   const handleSlideChange = () => {
-//     const elements = document.querySelectorAll('.imgSwiper, .description, .join-now, .slider-titles, .slider-description');
-//     elements.forEach(el => {
-//         if (el instanceof HTMLElement) {
-//             el.style.animation = 'none';
-//             el.offsetHeight; // Trigger a reflow
-//             el.style.animation = "";
-//         }
-//     });
-// };
-
-  return (
-    // first && (
-    <Swiper
-      // install Swiper modules
-      modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
+    return (
+<Swiper className="swiper-container"
+      spaceBetween={50}
       slidesPerView={1}
-      navigation
-      pagination={{ clickable: true }}
       loop={true}
       autoplay={{
-        delay: 1000,
-
+        delay: 4000,
         disableOnInteraction: false,
       }}
-    //   onSlideChange={handleSlideChange}
+      pagination={{
+        clickable: true,
+        renderBullet: (index, className) => {
+          return `<span class="${className}"><span class="bullet-divider">0${index+1}</span> </span>`;
+        },
+      }}
+      navigation
+      modules={[Navigation, Pagination, A11y, Autoplay,EffectFade]}
+      // effect="fade"
     >
-      {IMAGES.map((imageDetail) => {
-        return (
-          <SwiperSlide className="tst" key={imageDetail.id}>
-            <Image
-              className="imgSwiper"
-              src={imageDetail.img}
-              alt="image-slider"
-            />
-          </SwiperSlide>
-        );
-      })}
+      {
+        IMAGES.map(sliderDetail =>{
+          return(
+            <SwiperSlide key={sliderDetail.id}>
+              <div className="rectangle-slider"></div>
+              <Image id="imageSlider" src={sliderDetail.img} alt='img'/>
+              <div id="description-box">
+                  <p id='description'>
+                      {sliderDetail.description}
+                  </p>
+                  <div id="join-now">
+                      <p>Join Now</p>
+                      <Image src={smallArrow} alt='smallArrow' style={{width : "20px"}}/>
+                  </div>
+              </div>
+              <div id="slider-text">
+                  <p id="slider-titles">
+                      {sliderDetail.title}
+                  </p>
+                  <p id="slider-description">
+                      Become a member & receive generous discounts on the lowest  online prices
+                  </p>
+              </div>
+            </SwiperSlide>
+          )
+        })
+      }
+
     </Swiper>
-  );
-  //   );
+
+    );
 }
