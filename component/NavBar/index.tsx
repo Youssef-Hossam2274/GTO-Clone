@@ -35,26 +35,14 @@ export default function NavBar() {
                         </Link>
                     </div>
                 
-                    <ul className='urls'>
-                        <li>
-                            <Link href="Discounted_Products">Discounted Products</Link>
-                        </li>
-                        <li>
-                            <Link href="Luxury_Products">Luxury Products</Link>
-                        </li>
-                        <li>
-                            <Link href="Membership_Types">Membership Types</Link>
-                        </li>
-                        <li>
-                            <Link href="How_to_Book">How to Book</Link>
-                        </li>
-                        <li>
-                            <Link href="How_to_join">How to join</Link>
-                        </li>
-                        <li>
-                            <Link href="Second_home">Home 2</Link>
-                        </li>
-                    </ul>
+                    <div className='urls'>
+                        <Link href="Discounted_Products">Discounted Products</Link>
+                        <Link href="Luxury_Products">Luxury Products</Link>
+                        <Link href="Membership_Types">Membership Types</Link>
+                        <Link href="How_to_Book">How to Book</Link>
+                        <Link href="How_to_join">How to join</Link>
+                        <Link href="Second_home">Home 2</Link>
+                    </div>
                 </div>
                 <div className="right-box">
                     <Image className='EMER-logo' src={EMER} alt="EMER" style={{width:"150px"}} />
@@ -69,6 +57,7 @@ export default function NavBar() {
                     <Link href="Membership_Types">Membership Types</Link>
                     <Link href="How_to_Book">How to Book</Link>
                     <Link href="How_to_join">How to join</Link>
+                    <Link href="Second_home">Home 2</Link>
                 </div>
             </div>
         </div>
