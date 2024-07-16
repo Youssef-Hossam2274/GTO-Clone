@@ -39,6 +39,9 @@ export default function NavBar() {
                         <li>
                             <Link href="How_to_join">How to join</Link>
                         </li>
+                        <li>
+                            <Link href="Second_home">Home 2</Link>
+                        </li>
                     </ul>
                 </div>
                 <div className="right-box">
