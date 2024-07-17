@@ -12,12 +12,13 @@
     .yellowBar-component{
         justify-content: space-between;
         gap: 0;
+        padding-inline: 5%;
     }
 }
 
 @media (max-width: 450px){
     .yellowBar-component{
-        padding-inline: 0;
+        padding-inline: 5%;
     }
 }
 
@@ -35,7 +36,14 @@
 .part:hover{
     color: white;
 }
-
+@media(max-width: 450px){
+    .part:hover{
+        color: black;
+    }
+    .part:active{
+        color: white;
+    }
+}
 .part img{
     color: white;
 }

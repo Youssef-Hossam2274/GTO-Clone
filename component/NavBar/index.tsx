@@ -52,12 +52,12 @@ export default function NavBar() {
             <div className="mobile-holder">
                 <Image src={navBarIcon} className="bar-icon" alt='navBaricon' onClick={toggle}/>
                 <div className="mobile-links">
-                    <Link href="Discounted_Products">Discounted Products</Link>
-                    <Link href="Luxury_Products">Luxury Products</Link>
-                    <Link href="Membership_Types">Membership Types</Link>
-                    <Link href="How_to_Book">How to Book</Link>
-                    <Link href="How_to_join">How to join</Link>
-                    <Link href="Second_home">Home 2</Link>
+                    <Link href="Discounted_Products" onClick={toggle}>Discounted Products</Link>
+                    <Link href="Luxury_Products" onClick={toggle}>Luxury Products</Link>
+                    <Link href="Membership_Types" onClick={toggle}>Membership Types</Link>
+                    <Link href="How_to_Book" onClick={toggle} >How to Book</Link>
+                    <Link href="How_to_join" onClick={toggle} >How to join</Link>
+                    <Link href="Second_home" onClick={toggle} >Home 2</Link>
                 </div>
             </div>
         </div>

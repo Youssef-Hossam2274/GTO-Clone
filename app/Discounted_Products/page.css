@@ -61,7 +61,7 @@
     height: 200%;
     top: -100%;
 }
-.two .ProductCart-slider:hover{
+.two .ProductCart-slider:hover{ 
     top: 0;
 }
 
@@ -72,6 +72,27 @@
     left: -100%;
 }
 
+@media (max-width: 1050px){
+    .one .ProductCart-slider:hover{
+        left: -100%;
+    }
+    .two .ProductCart-slider:hover{ 
+        top: -100%;
+    }
+    .three .ProductCart-slider:hover{
+        left: 0;
+    }
+    
+    .one .ProductCart-slider:active{
+        left: 0;
+    }
+    .two .ProductCart-slider:active{ 
+        top: 0;
+    }
+    .three .ProductCart-slider:active{
+        left: -100%;
+    }
+}
 
 @media (max-width : 770px){
     .one, .two, .three{

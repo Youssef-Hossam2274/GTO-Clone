@@ -12,14 +12,6 @@ import profileIcon from "@/images/profileIcon.svg"
 
 export default function index() {
 
-    // const SelectComponent = () => {
-    //     const [selectedValue, setSelectedValue] = useState('');
-
-    //     const handleChange = (event) => {
-    //         setSelectedValue(event.target.value);
-    //     };
-    // }
-
     return (
         <div className='yellowBar-component'>
             <select className='selectOption'>

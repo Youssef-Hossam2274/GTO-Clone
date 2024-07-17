@@ -20,7 +20,6 @@ import img8 from "@/images/home-slider-8.jpg";
 import img9 from "@/images/home-slider-9.jpg";
 import arrow from "@/images/prevArrow.svg";
 import { Autoplay } from "swiper/modules";
-import { useEffect, useState } from "react";
 import smallArrow from "@/images/smallArrow.svg";
 
 let IMAGES = [
