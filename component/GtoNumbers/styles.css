@@ -11,15 +11,32 @@
 
 .gtoNumbers-title{
     color: #d4a742;
-    font-size: 20px;
+    font-size: 2vw;
     font-weight: 700;
+}
+
+@media (max-width: 800px) {
+    
+    .gtoNumbers-title{
+        color: #d4a742;
+        font-size: 7vw;
+        font-weight: 700;
+    }
 }
 
 .gtoNumbers-parag1, .gtoNumbers-parag2{
     text-align: center;
-    font-size: 43px;
+    font-size: 3vw;
     font-weight: 600;
-    line-height: 75px;
+    line-height: 5vw;
+}
+@media (max-width: 800px) {
+    .gtoNumbers-parag1, .gtoNumbers-parag2{
+        text-align: center;
+        font-size: 7vw;
+        font-weight: 600;
+        line-height: 10vw;
+    }
 }
 
 .gtoNumbers-component span{
