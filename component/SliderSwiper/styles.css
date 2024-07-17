@@ -273,6 +273,7 @@
 
 @media (max-width: 600px) {
     .swiper-slide-active #slider-text{
+        padding-inline: 5vw;
         max-width: 100%;
         text-align: center;
         top: 30%;

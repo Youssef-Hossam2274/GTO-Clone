@@ -4,9 +4,9 @@
     gap: 20px;
     background-color: #222222;
     border-bottom: solid #d4a742 4px;
-    /* justify-content: center; */
     align-items: center;
     padding-block: 40px;
+    padding-inline: 5%;
 }
 
 .gtoNumbers-title{
