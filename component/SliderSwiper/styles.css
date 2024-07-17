@@ -95,12 +95,12 @@
 
 @media(max-width: 600px){
     .swiper-button-next{
-        top: calc(100% - 70px);
+        top: 80%;
         right: 35%;
     }
     
     .swiper-button-prev{
-        top: calc(100% - 70px);
+        top: 80%;
         left: 30%;
     }
 }
@@ -273,11 +273,11 @@
 
 @media (max-width: 600px) {
     .swiper-slide-active #slider-text{
-        /* padding-inline: 5vw; */
-        /* max-width: 100%; */
+        /* padding-inline: 3vw; */
+        align-items: center;
         text-align: center;
         top: 40%;
-        left: 10%;
+        left: 0;
     }
 }
 
@@ -286,7 +286,7 @@
     font-size: 3vw;
     font-weight: 600;
     animation: slider-titles 0.8s;
-    max-width: 80vw;
+    width: 60vw;
 }
 
 @media (max-width: 1050px) {
@@ -298,6 +298,7 @@
 
 @media (max-width: 600px) {
     .swiper-slide-active #slider-titles{
+        width: 80%;
         font-size: 8vw;
         font-weight: 600;
     }
@@ -305,10 +306,8 @@
 
 .swiper-slide-active #slider-description{
     position: relative;
-    /* font-size: 25px; */
     font-size: 2vw;
     width: 60vw;
-    
     font-weight: 500;
     animation: slider-titles 0.5s;
 }
@@ -317,5 +316,5 @@
     .swiper-slide-active #slider-description{
         font-size: 4vw;
         width: 100%;
-        }
+    }
 }
