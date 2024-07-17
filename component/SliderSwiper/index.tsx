@@ -98,7 +98,6 @@ export default function SliderSwiper() {
       }}
       navigation
       modules={[Navigation, Pagination, A11y, Autoplay,EffectFade]}
-      // effect="fade"
     >
       {
         IMAGES.map(sliderDetail =>{

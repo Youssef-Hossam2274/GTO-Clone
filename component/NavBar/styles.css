@@ -58,9 +58,9 @@
     max-width: 500px;
     width: 100%;
     margin-inline: auto;
-    transition: opacity 0.5s ease, max-height 0.5s ease;
     max-height: 0;
     overflow: hidden;
+    transition: opacity 0.5s ease, max-height 0.5s ease;
 }
 
 .mobile-links.active {
