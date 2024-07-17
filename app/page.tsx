@@ -15,14 +15,14 @@ export default function Home() {
   return (
     <div>
       <div className={style.homePage}>
-        <SliderSwiper/>
+        {/* <SliderSwiper/>
         <OrganisationMembership/>
         <GtoNumbers/>
         <MemberShipBenefits/>
         <Coverage/>
         <HomeCart/>
         <Assistant/>
-        <DownloadMobile/>
+        <DownloadMobile/> */}
       </div>
     </div>
   );
