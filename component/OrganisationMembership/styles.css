@@ -49,22 +49,22 @@
 
 .organisation-title{
     color: #d4a742;
-    font-size: 20px;
+    font-size: 1.5vw;
 }
 @media (max-width: 1150px){
     .organisation-title{
-        font-size: 25px;
+        font-size: 4vw;
         font-weight: 600;
     }
 }
 .organisation-description{
-    line-height: 30px;
-    font-size: 15px;
+    line-height: 2vw;
+    font-size: 1vw;
 }
 
 @media (max-width: 1150px){
     .organisation-description{
-        font-size: 18px;
-        line-height: 35px;
+        font-size: 3vw;
+        line-height: 5vw;
     }
 }
