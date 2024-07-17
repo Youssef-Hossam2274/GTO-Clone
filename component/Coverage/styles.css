@@ -10,5 +10,12 @@
 .coverage-title{
     color: #d4a742;
     font-size: 23px;
+    font-size: 2vw;
     font-weight: 700;
+}
+
+@media (max-width:800px){
+    .coverage-title{
+        font-size: 4vw;
+    }
 }
