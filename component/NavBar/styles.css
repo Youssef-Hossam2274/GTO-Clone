@@ -1,99 +1,102 @@
-.nav-bar-component{
+.nav-bar-component {
     display: flex;
     flex-direction: column;
     background-color: rgb(34, 34, 34);
-    padding: 15px;
-    border-bottom-style: solid;
-    border-bottom-color: #d4a742;
-    border-bottom-width: 1px;
+    border-bottom: solid #d4a742 1px;
+    padding-inline: 2vw;
+    padding-block: 1vw;
     position: relative;
-    transition: 0.5s;
+    transition: height 0.5s ease, padding 0.5s ease;
     overflow: hidden;
-    height: 130px;
-}
-.nav-bar-component.mobile{
-    height: 450px;
 }
 
-.nav-fullScreen{
+.nav-bar-component.mobile {
+    gap: 3vw;
+    padding-bottom: 20px;
+}
+
+.nav-fullScreen {
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
-.nav-logo img{
-    width: 250px;
+
+.nav-logo img {
+    width: clamp(200px, 20vw, 300px);
 }
 
-.mobile-holder{
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center ;
-    gap: 40px;
-    transition: 1s;
+.mobile-holder {
+    display: none;
 }
 
-.bar-icon{
+.bar-icon {
     font-size: 25px;
     color: #3f444b;
     cursor: pointer;
     display: none;
 }
 
-.mobile-links{
-    width: 60%;
-    height: 200px;
+.mobile-links {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: #fff;
     color: #000;
-    margin-bottom: 30px;
     opacity: 0;
-    transition: 0.5s;
-}
-.mobile-links.active{
-    opacity: 1;
+    max-width: 500px;
+    width: 100%;
+    margin-inline: auto;
+    transition: opacity 0.5s ease, max-height 0.5s ease;
+    max-height: 0;
+    overflow: hidden;
 }
 
-.mobile-links a{
+.mobile-links.active {
+    opacity: 1;
+    max-height: 500px;
+}
+
+.mobile-links a {
     padding: 10px 20px;
     text-align: left;
     width: 100%;
     font-size: 13px;
-    transition: 0.2s;
+    transition: background-color 0.5s;
     background-color: white;
 }
 
-.mobile-links a:hover{
+.mobile-links a:hover {
     color: white;
     background-color: #3f444b;
 }
 
-.mobile-links a:focus{
+.mobile-links a:focus {
     color: white;
     background-color: #3f444b;
 }
 
-.left-box{
+.left-box {
     display: flex;
+    gap: 40px;
 }
 
-.nav-logo{
-    margin-right: 40px;
+.nav-logo {
 }
 
-.urls{
+.urls {
     color: #d4a742;
     display: flex;
     align-items: center;
     gap: 30px;
 }
 
-.urls a{
+.urls a {
     position: relative;
     font-size: 15px;
     font-weight: 400;
     padding-bottom: 10px;
-    transition: 0.2s  ease-in;
+    transition: color 0.2s ease-in;
 }
 
 .urls a::after {
@@ -105,48 +108,54 @@
     margin-top: 5px;
     right: 0;
     background: white;
-    transition: 0.3s ease;
+    transition: width 0.3s ease;
 }
 
-.urls a:hover::after, .urls a:focus::after {
+.urls a:hover::after,
+.urls a:focus::after {
     width: 100%;
     right: 0;
 }
+
 .urls a:hover,
-.urls a:focus{
+.urls a:focus {
     color: white;
 }
 
-.right-box{
+.right-box {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;
+    justify-content: center;
+    gap: 1vw;
 }
-
 
 /* tablet screen */
 @media (max-width: 1050px) {
-    .urls{
+    .urls {
         display: none;
     }
-    .bar-icon{
+    .bar-icon {
         display: flex;
+        width: clamp(20px, 10vw, 40px);
     }
-    .nav-logo img{
+    .nav-logo img {
         width: 195px;
+    }
+    .mobile-holder {
+        display: flex;
     }
 }
 
 /* phone screen */
 @media (max-width: 867px) {
-    .EMER-logo{
+    .EMER-logo {
         display: none;
     }
-    .mobile-links{
-        width: 100%;
+    .bar-icon {
+        margin-right: 3vw;
     }
-    .bar-icon{
-        margin: 0;
+    .right-box {
+        display: none;
     }
 }

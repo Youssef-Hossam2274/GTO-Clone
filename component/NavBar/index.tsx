@@ -44,21 +44,23 @@ export default function NavBar() {
                         <Link href="Second_home">Home 2</Link>
                     </div>
                 </div>
+                
+                <div className="mobile-holder">
+                    <Image src={navBarIcon} className="bar-icon" alt='navBaricon' onClick={toggle}/>
+                </div>
+                
                 <div className="right-box">
                     <Image className='EMER-logo' src={EMER} alt="EMER" style={{width:"150px"}} />
                     <Image className='etisalate-logo'  src={etisalat} alt="etisalat" style={{width:"100px", height:"auto"}} />
                 </div>
             </div>
-            <div className="mobile-holder">
-                <Image src={navBarIcon} className="bar-icon" alt='navBaricon' onClick={toggle}/>
-                <div className="mobile-links">
-                    <Link href="Discounted_Products" onClick={toggle}>Discounted Products</Link>
-                    <Link href="Luxury_Products" onClick={toggle}>Luxury Products</Link>
-                    <Link href="Membership_Types" onClick={toggle}>Membership Types</Link>
-                    <Link href="How_to_Book" onClick={toggle} >How to Book</Link>
-                    <Link href="How_to_join" onClick={toggle} >How to join</Link>
-                    <Link href="Second_home" onClick={toggle} >Home 2</Link>
-                </div>
+            <div className="mobile-links">
+                <Link href="Discounted_Products" onClick={toggle}>Discounted Products</Link>
+                <Link href="Luxury_Products" onClick={toggle}>Luxury Products</Link>
+                <Link href="Membership_Types" onClick={toggle}>Membership Types</Link>
+                <Link href="How_to_Book" onClick={toggle} >How to Book</Link>
+                <Link href="How_to_join" onClick={toggle} >How to join</Link>
+                <Link href="Second_home" onClick={toggle} >Home 2</Link>
             </div>
         </div>
     );
