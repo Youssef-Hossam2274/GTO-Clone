@@ -4,13 +4,17 @@ import "./styles.css"
 import Image from 'next/image'
 import closeIcon from "@/gto-assets/Images/close-btn-icon.svg"
 import { useSelector, useDispatch } from 'react-redux'
-import { closeLoginForm } from '@/redux/actions/action'
+import { closeLoginForm, loginSubmitAction } from '@/redux/actions/action'
+import store from '@/redux/store'
+import Link from 'next/link'
 
 interface STATE{
     open:boolean
 }
 
 export default function LoginForm() {
+    
+    console.log("re-render")
     const LoginFomrFlag = useSelector((state:STATE) => state.open);
     const dispatch = useDispatch();
     const closeForm = ()=>{
@@ -20,6 +24,22 @@ export default function LoginForm() {
             dispatch(closeLoginForm())
         }, 500);
     }
+
+    const loginSubmit = ()=>{
+        dispatch(loginSubmitAction(
+            "Mr",
+            "Youssef",
+            "Osman",
+            "xxx@gmail.com",
+            "Egypt",
+            "Egypt",
+            "4706647667"
+        ))
+
+        // location.href = "Profile"
+        console.log(store.getState());
+        closeForm();
+    }
     return (
         <div className='LoginForm-component'>
             <div className="LoginForm">
@@ -28,10 +48,10 @@ export default function LoginForm() {
                         <Image src = {closeIcon} alt=''/></div>
                     <p className="LoginFormTitle">Log in</p>
                 </div>
-                <form action="">
+                <div className='Form'>
                     <input type="email" placeholder='Email'/>
-                    <button className='LoginFormButton' type='submit'>Log in</button>
-                </form>
+                    <Link href="Profile" className='LoginFormButton' onClick={loginSubmit}>Log in</Link>
+                </div>
             </div>
         </div>
     )

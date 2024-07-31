@@ -61,7 +61,7 @@
     cursor: pointer;
 }
 
-.LoginForm form{
+.LoginForm .Form{
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -73,6 +73,7 @@
     outline: none;
 }
 .LoginFormButton{
+    text-align: center;
     width: 100%;
     background-color: #d4a742;
     border-radius: 10px;

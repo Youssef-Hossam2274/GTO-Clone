@@ -27,7 +27,7 @@
     border: 1px solid #5c5c5c;
     border-radius: 10px;
     transition: 0.4s;
-    width: 11vw;
+    width: clamp(200px,12vw,12vw);
 }
 .profile:hover,
 .quotations:hover,
