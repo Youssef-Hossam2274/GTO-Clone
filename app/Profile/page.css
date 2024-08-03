@@ -1,3 +1,20 @@
-.profile-layout{
+.profile-page{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
     background-color: #222222;
+    width: 70vw;
+    padding-block: 5vh;
+}
+
+@media (max-width:1200px){
+    .profile-page{
+        width: 55vw;
+    }
+}
+@media (max-width:800px){
+    .profile-page{
+        width: 90vw;
+        margin-inline: auto;
+    }
 }

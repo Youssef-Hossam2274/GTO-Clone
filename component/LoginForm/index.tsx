@@ -50,7 +50,6 @@ export default function LoginForm() {
         localStorage.setItem("residence", residence)
         localStorage.setItem("invitationCode", invitationCode)
 
-        console.log(store.getState().loginSubmit);
         closeForm();
     }
     return (

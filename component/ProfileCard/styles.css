@@ -1,0 +1,43 @@
+.gto-card{
+    position: relative;
+    width: 100%;
+}
+.infoCard{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+    width: 100%;
+}
+.infoName,
+.infoExpires,
+.infoNumbers{
+    display: flex;
+    gap: 5px;
+}
+.infoNumbers{
+    gap: 10px;
+}
+
+.infoName-block,
+.infoExpires-block,
+.infoNumbers-block{
+    display: flex;
+}
+
+.infoName-block img{
+    width: auto;
+    height: 20px;
+}
+
+.infoExpires-block img{
+    width: auto;
+    height: 12px;
+}
+
+.infoNumbers-block img{
+    width: auto;
+    height: 30px;
+}
