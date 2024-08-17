@@ -4,6 +4,7 @@ import "./styles.css"
 import { UseDispatch, useSelector } from 'react-redux'
 import Image from 'next/image';
 import editImage from "@/gto-assets/Images/editIcon.svg"
+import ProfileEditModal from '../ProfileEditModal';
 
 export default function ProfileTabel() {
     const {firstName, lastName, email, title, country, residence, invitationCode} = useSelector(state => state.loginSubmit);
@@ -16,7 +17,9 @@ export default function ProfileTabel() {
                         {title + " " + firstName + " " + lastName}
                     </div>
                 </div>
-                <div className="infoRow-rightBox">
+                <div className="infoRow-rightBox" onClick={ () => {
+                    return <ProfileEditModal typeFormEdit="emailEdit"/>
+                }}>
                     <Image src={editImage} alt='editImage'/>
                 </div>
             </div>

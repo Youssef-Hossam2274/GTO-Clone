@@ -5,18 +5,46 @@ import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWallet, faRightToBracket, faUser } from '@fortawesome/free-solid-svg-icons';
 import { useSelector, useDispatch } from 'react-redux';
-import { formToggled } from '@/redux/Slices/LoginFormSlice';
+import { modalToggled } from '@/redux/Slices/ModalSlice';
+import { Logout, Login } from '@/redux/Slices/LoginSubmitSlice';
 import LoginForm from '../LoginForm';
-import { Logout } from '@/redux/Slices/LoginSubmitSlice';
-import profileImage from "@/gto-assets/Images/profileIcon.svg"
-import Image from 'next/image';
 
 
 export default function YellowBar() {
-    const {formOpen} = useSelector(state =>state.loginForm);
+    const {modalToggle} = useSelector(state =>state.modal);
     const {logged, firstName, lastName} = useSelector(state => state.loginSubmit);
     const dispatch = useDispatch();
+    
+    const loginSubmit = ()=>{
+        const logged = true;
+        const title = "Mr"
+        const firstName = "Youssef"
+        const lastName ="Osman"
+        const email = "xxx@gmail.com"
+        const country = "Egypt"
+        const residence = "Egypt"
+        const invitationCode = "123456"
 
+        dispatch(Login({payload:{
+            logged:logged,
+            title:title,
+            firstName:firstName,
+            lastName:lastName,
+            email:email,
+            country:country,
+            residence:residence,
+            invitationCode: invitationCode,
+        }}))
+        localStorage.setItem("logged", String(logged))
+        localStorage.setItem("title", title)
+        localStorage.setItem("firstName", firstName)
+        localStorage.setItem("lastName", lastName)
+        localStorage.setItem("email", email)
+        localStorage.setItem("country", country)
+        localStorage.setItem("residence", residence)
+        localStorage.setItem("invitationCode", invitationCode)
+    }
+    
     return (
             <div className='yellowBar-component'>
                 {
@@ -53,7 +81,7 @@ export default function YellowBar() {
 
                 <div className="part"onClick={()=> {
                         logged ? dispatch(Logout()) :
-                        dispatch(formToggled());
+                        dispatch(modalToggled());
                     }}>
                     <FontAwesomeIcon icon={faRightToBracket} />
                     <Link href="" >
@@ -73,7 +101,9 @@ export default function YellowBar() {
                 }
                 
                 {
-                    (formOpen && <LoginForm/>)
+                    (modalToggle && 
+                            <LoginForm/>
+                    )
                 }
             </div>
     )

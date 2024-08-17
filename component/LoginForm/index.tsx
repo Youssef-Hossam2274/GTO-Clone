@@ -4,10 +4,11 @@ import "./styles.css"
 import Image from 'next/image'
 import closeIcon from "@/gto-assets/Images/close-btn-icon.svg"
 import { useSelector, useDispatch } from 'react-redux'
-import {store} from '@/redux/store'
-import { formToggled } from '@/redux/Slices/LoginFormSlice'
+import { modalToggled } from '@/redux/Slices/ModalSlice'
 import { Login } from '@/redux/Slices/LoginSubmitSlice'
 import Link from 'next/link'
+import Modal from '../Modal'
+import EmaiInput from '../EmailInput'
 
 
 export default function LoginForm() {
@@ -17,7 +18,7 @@ export default function LoginForm() {
         const LoginForm = document.querySelector(".LoginForm");
         LoginForm?.classList.add("close");
         setTimeout(() => {
-            dispatch(formToggled())
+            dispatch(modalToggled())
         }, 500);
     }
 
@@ -52,19 +53,14 @@ export default function LoginForm() {
 
         closeForm();
     }
+    
     return (
         <div className='LoginForm-component'>
-            <div className="LoginForm">
-                <div className="upper-form">
-                    <div className="close-form" onClick={closeForm}>
-                        <Image src = {closeIcon} alt=''/></div>
-                    <p className="LoginFormTitle">Log in</p>
-                </div>
-                <div className='Form'>
-                    <input type="email" placeholder='Email'/>
-                    <Link href="Profile" className='LoginFormButton' onClick={loginSubmit}>Log in</Link>
-                </div>
-            </div>
+            <Modal>
+                <p className="LoginFormTitle">Log in</p>
+                <EmaiInput/>
+                <button className='LoginFormButton' onClick={loginSubmit}>Log in</button>
+            </Modal>
         </div>
     )
 }
