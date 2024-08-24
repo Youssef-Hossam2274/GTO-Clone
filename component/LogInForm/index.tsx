@@ -10,8 +10,15 @@ import EmaiInput from '../EmailInput'
 export default function LoginForm({ modal, setModal }: { modal: boolean, setModal: (state: boolean) => void }) {
     const dispatch = useDispatch();
     const [validInput, setValidInput] = useState(false);
+    const [startedWrite, setStartedWrite] = useState(false);
+    const [inputValue, setInputValue] = useState("");
+    const handleChange = () => {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        setValidInput(emailRegex.test(inputValue))
+        setStartedWrite(true);
+    }
 
-    const loginSubmit = () => {
+    const handleSubmit = () => {
         const logged = true;
         const title = "Mr"
         const firstName = "Client"
@@ -20,7 +27,7 @@ export default function LoginForm({ modal, setModal }: { modal: boolean, setModa
         const country = "Egypt"
         const residence = "Egypt"
         const invitationCode = "123456"
-        if (validInput) {
+        if (validInput && inputValue === "client.gto@gmail.com") {
 
             dispatch(Login({
                 payload: {
@@ -45,6 +52,10 @@ export default function LoginForm({ modal, setModal }: { modal: boolean, setModa
 
             setModal(false);
         }
+        else {
+            setValidInput(false);
+            setStartedWrite(true);
+        }
 
     }
 
@@ -52,8 +63,14 @@ export default function LoginForm({ modal, setModal }: { modal: boolean, setModa
         <div className='LoginForm-component'>
             <Modal isOpen={modal} setIsOpen={setModal}>
                 <p className="LoginFormTitle">Log in</p>
-                <EmaiInput setState={setValidInput} />
-                <button className='LoginFormButton' onClick={loginSubmit}>Log in</button>
+                <EmaiInput
+                    inputValid={validInput}
+                    inputValue={inputValue}
+                    setInputValue={setInputValue}
+                    onChange={handleChange}
+                    startedWrite={startedWrite}
+                />
+                <button className='LoginFormButton' onClick={handleSubmit}>Log in</button>
             </Modal>
         </div>
     )
