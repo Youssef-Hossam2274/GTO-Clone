@@ -1,5 +1,5 @@
 "use client";
-import { Navigation, Pagination, A11y,EffectFade } from "swiper/modules";
+import { Navigation, Pagination, A11y, EffectFade } from "swiper/modules";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -8,7 +8,7 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "./styles.css";
 
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import img1 from "@/images/home-slider-1.jpg";
 import img2 from "@/images/home-slider-2.jpg";
 import img3 from "@/images/home-slider-3.jpg";
@@ -17,7 +17,6 @@ import img5 from "@/images/home-slider-5.jpg";
 import img6 from "@/images/home-slider-6.jpg";
 import img8 from "@/images/home-slider-8.jpg";
 import img9 from "@/images/home-slider-9.jpg";
-import arrow from "@/images/prevArrow.svg";
 import { Autoplay } from "swiper/modules";
 import smallArrow from "@/images/smallArrow.svg";
 
@@ -66,13 +65,6 @@ let IMAGES = [
   },
   {
     id: 7,
-    img: img8,
-    title: "40% Discount On Resorts WorldWide",
-    description:
-      "As a GTO member you can enjoy up to 40% discount on the lowest online price you can find on major websites for Resorts WorldWide",
-  },
-  {
-    id: 8,
     img: img9,
     title: "40% Discount On Activities",
     description:
@@ -81,53 +73,56 @@ let IMAGES = [
 ];
 
 export default function SliderSwiper() {
-    return (
-<Swiper className="swiper-container"
-      spaceBetween={50}
-      slidesPerView={1}
-      loop={true}
-      autoplay={{
-        delay: 4000,
-        disableOnInteraction: false,
-      }}
-      pagination={{
-        clickable: true,
-        renderBullet: (index, className) => {
-          return `<span class="${className}"><span class="bullet-divider">0${index+1}</span> </span>`;
-        },
-      }}
-      navigation
-      modules={[Navigation, Pagination, A11y, Autoplay,EffectFade]}
-    >
-      {
-        IMAGES.map(sliderDetail =>{
-          return(
-            <SwiperSlide key={sliderDetail.id}>
-              <div id="rectangle-slider"></div>
-              <Image id="imageSlider" src={sliderDetail.img} alt='img'/>
-              <div id="description-box">
+  return (
+    <div className="slider-container">
+
+      <Swiper className="swiper-container"
+        spaceBetween={50}
+        slidesPerView={1}
+        loop={true}
+        autoplay={{
+          delay: 4000,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+          renderBullet: (index, className) => {
+            return `<span class="${className}"><span class="bullet-divider">0${index + 1}</span> </span>`;
+          },
+        }}
+        navigation
+        modules={[Navigation, Pagination, A11y, Autoplay, EffectFade]}
+      >
+        {
+          IMAGES.map(sliderDetail => {
+            return (
+              <SwiperSlide key={sliderDetail.id}>
+                <div id="rectangle-slider"></div>
+                <Image id="imageSlider" src={sliderDetail.img} alt='img' />
+                <div id="description-box">
                   <p id='description'>
-                      {sliderDetail.description}
+                    {sliderDetail.description}
                   </p>
                   <div id="join-now">
-                      <p>Join Now</p>
-                      <Image src={smallArrow} alt='smallArrow' style={{width : "20px"}}/>
+                    <p>Join Now</p>
+                    <Image src={smallArrow} alt='smallArrow' style={{ width: "20px" }} />
                   </div>
-              </div>
-              <div id="slider-text">
+                </div>
+                <div id="slider-text">
                   <p id="slider-titles">
-                      {sliderDetail.title}
+                    {sliderDetail.title}
                   </p>
                   <p id="slider-description">
-                      Become a member & receive generous discounts on the lowest  online prices
+                    Become a member & receive generous discounts on the lowest  online prices
                   </p>
-              </div>
-            </SwiperSlide>
-          )
-        })
-      }
+                </div>
+              </SwiperSlide>
+            )
+          })
+        }
 
-    </Swiper>
+      </Swiper>
+    </div>
 
-    );
+  );
 }
