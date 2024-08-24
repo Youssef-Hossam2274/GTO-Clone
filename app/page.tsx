@@ -17,7 +17,6 @@ export default function Home() {
   return (
     <div>
       <div className={style.homePage}>
-        <div></div>
         <SliderSwiper/>
         <OrganisationMembership/>
         <GtoNumbers/>

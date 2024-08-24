@@ -8,7 +8,7 @@ During my internship at Bit 68, I was tasked with cloning the GTO website to gai
 
 ## Live Demo
 
-Check out the live demo of the project [here](https://copy-39xzs36jq-youssef-hossam2274s-projects.vercel.app/).
+Check out the live demo of the project [here](https://copy-gto.vercel.app/).
 
 ## Technologies Used
 
@@ -31,15 +31,12 @@ Check out the live demo of the project [here](https://copy-39xzs36jq-youssef-hos
    
    ```bash
    git clone https://github.com/Youssef-Hossam2274/GTO-Clone.git
-2. Navigate to the project directory:
 
-   ```bash
-   cd gto-clone
-3. Install the dependencies:
+2. Install the dependencies:
 
    ```bash
    npm install
-4. Run the development server:
+3. Run the development server:
    ```bash
    npm run dev
 5. Open your browser and go to http://localhost:3000 to view the project.
