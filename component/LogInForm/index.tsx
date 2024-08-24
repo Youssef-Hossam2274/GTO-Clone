@@ -27,35 +27,35 @@ export default function LoginForm({ modal, setModal }: { modal: boolean, setModa
         const country = "Egypt"
         const residence = "Egypt"
         const invitationCode = "123456"
-        if (validInput && inputValue === "client.gto@gmail.com") {
+        // if (validInput && inputValue === "client.gto@gmail.com") {
 
-            dispatch(Login({
-                payload: {
-                    logged: logged,
-                    title: title,
-                    firstName: firstName,
-                    lastName: lastName,
-                    email: email,
-                    country: country,
-                    residence: residence,
-                    invitationCode: invitationCode,
-                }
-            }))
-            // localStorage.setItem("logged", String(logged))
-            // localStorage.setItem("title", title)
-            // localStorage.setItem("firstName", firstName)
-            // localStorage.setItem("lastName", lastName)
-            // localStorage.setItem("email", email)
-            // localStorage.setItem("country", country)
-            // localStorage.setItem("residence", residence)
-            // localStorage.setItem("invitationCode", invitationCode)
+        //     dispatch(Login({
+        //         payload: {
+        //             logged: logged,
+        //             title: title,
+        //             firstName: firstName,
+        //             lastName: lastName,
+        //             email: email,
+        //             country: country,
+        //             residence: residence,
+        //             invitationCode: invitationCode,
+        //         }
+        //     }))
+        //     localStorage.setItem("logged", String(logged))
+        //     localStorage.setItem("title", title)
+        //     localStorage.setItem("firstName", firstName)
+        //     localStorage.setItem("lastName", lastName)
+        //     localStorage.setItem("email", email)
+        //     localStorage.setItem("country", country)
+        //     localStorage.setItem("residence", residence)
+        //     localStorage.setItem("invitationCode", invitationCode)
 
-            setModal(false);
-        }
-        else {
+        //     setModal(false);
+        // }
+        // else {
             setValidInput(false);
             setStartedWrite(true);
-        }
+        // }
 
     }
 

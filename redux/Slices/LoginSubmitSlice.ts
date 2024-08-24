@@ -12,13 +12,13 @@ const loginSubmit = createSlice({
   name: 'loginSubmit',
   initialState: {
     logged: getLocalStorageItem("logged", false),
-    title: getLocalStorageItem("title", ""),
-    firstName: getLocalStorageItem("firstName", ""),
-    lastName: getLocalStorageItem("lastName", ""),
-    email: getLocalStorageItem("email", ""),
-    country: getLocalStorageItem("country", ""),
-    residence: getLocalStorageItem("residence", ""),
-    invitationCode: getLocalStorageItem("invitationCode", ""),
+    title: getLocalStorageItem("title", "Mr"),
+    firstName: getLocalStorageItem("firstName", "Client"),
+    lastName: getLocalStorageItem("lastName", "gto"),
+    email: getLocalStorageItem("email", "client.gto@gmail.com"),
+    country: getLocalStorageItem("country", "Egypt"),
+    residence: getLocalStorageItem("residence", "Egypt"),
+    invitationCode: getLocalStorageItem("invitationCode", "1234"),
   },
   reducers: {
     Login(state, action) {

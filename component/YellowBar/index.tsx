@@ -39,14 +39,14 @@ export default function YellowBar() {
                 invitationCode: invitationCode,
             }
         }))
-        // localStorage.setItem("logged", String(logged))
-        // localStorage.setItem("title", title)
-        // localStorage.setItem("firstName", firstName)
-        // localStorage.setItem("lastName", lastName)
-        // localStorage.setItem("email", email)
-        // localStorage.setItem("country", country)
-        // localStorage.setItem("residence", residence)
-        // localStorage.setItem("invitationCode", invitationCode)
+        localStorage.setItem("logged", String(logged))
+        localStorage.setItem("title", title)
+        localStorage.setItem("firstName", firstName)
+        localStorage.setItem("lastName", lastName)
+        localStorage.setItem("email", email)
+        localStorage.setItem("country", country)
+        localStorage.setItem("residence", residence)
+        localStorage.setItem("invitationCode", invitationCode)
     }
 
     return (
