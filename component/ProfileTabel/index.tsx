@@ -4,10 +4,9 @@ import "./styles.css"
 import { UseDispatch, useSelector } from 'react-redux'
 import Image from 'next/image';
 import editImage from "@/gto-assets/Images/editIcon.svg"
-import ProfileEditModal from '../ProfileEditModal';
 
 export default function ProfileTabel() {
-    const {firstName, lastName, email, title, country, residence, invitationCode} = useSelector(state => state.loginSubmit);
+    const { firstName, lastName, email, title, country, residence, invitationCode } = useSelector((state:any) => state.loginSubmit);
     return (
         <div className='profileTabel-component'>
             <div className="infoRow">
@@ -17,10 +16,8 @@ export default function ProfileTabel() {
                         {title + " " + firstName + " " + lastName}
                     </div>
                 </div>
-                <div className="infoRow-rightBox" onClick={ () => {
-                    return <ProfileEditModal typeFormEdit="emailEdit"/>
-                }}>
-                    <Image src={editImage} alt='editImage'/>
+                <div className="infoRow-rightBox">
+                    <Image src={editImage} alt='editImage' />
                 </div>
             </div>
             <div className="infoRow">
@@ -31,7 +28,7 @@ export default function ProfileTabel() {
                     </div>
                 </div>
                 <div className="infoRow-rightBox">
-                    <Image src={editImage} alt='editImage'/>
+                    <Image src={editImage} alt='editImage' />
                 </div>
             </div>
             <div className="infoRow">
@@ -42,7 +39,7 @@ export default function ProfileTabel() {
                     </div>
                 </div>
                 <div className="infoRow-rightBox">
-                    <Image src={editImage} alt='editImage'/>
+                    <Image src={editImage} alt='editImage' />
                 </div>
             </div>
             <div className="infoRow">
@@ -53,7 +50,7 @@ export default function ProfileTabel() {
                     </div>
                 </div>
                 <div className="infoRow-rightBox">
-                    <Image src={editImage} alt='editImage'/>
+                    <Image src={editImage} alt='editImage' />
                 </div>
             </div>
             <div className="infoRow">
@@ -64,7 +61,7 @@ export default function ProfileTabel() {
                     </div>
                 </div>
                 <div className="infoRow-rightBox">
-                    <Image src={editImage} alt='editImage'/>
+                    <Image src={editImage} alt='editImage' />
                 </div>
             </div>
             <div className="infoRow invitationCode">
@@ -75,7 +72,7 @@ export default function ProfileTabel() {
                     </div>
                 </div>
                 <div className="infoRow-rightBox">
-                    <Image src={editImage} alt='editImage'/>
+                    <Image src={editImage} alt='editImage' />
                 </div>
             </div>
         </div>
