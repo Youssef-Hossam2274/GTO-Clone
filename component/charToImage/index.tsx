@@ -1,9 +1,9 @@
 import React from 'react';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 
 interface CharToImageProps {
     text: string[];
-    mapCharImage: { [key: string]: string };
+    mapCharImage: Record<string, StaticImageData>;
     class_name: string;
 }
 

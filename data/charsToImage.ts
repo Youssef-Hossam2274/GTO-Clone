@@ -38,9 +38,9 @@ import apostroph    from "@/gto-assets/Images/silver-numbers/apostroph.png"
 import dash    from "@/gto-assets/Images/silver-numbers/dash.png"
 import dot    from "@/gto-assets/Images/silver-numbers/dot.png"
 import slash    from "@/gto-assets/Images/silver-numbers/slash.png"
+import { StaticImageData } from "next/image"
 
-
-export const mapCharImageSilver = {
+export const mapCharImageSilver: Record<string, StaticImageData>  = {
     'a':aSilver,
     'b':bSilver,
     'c':cSilver,
