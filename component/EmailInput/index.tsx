@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./styles.css"
 import check_circle from "@/gto-assets/Images/check_circle.svg"
 import cancel_circle from "@/gto-assets/Images/cancel_circle.svg"
 import Image from 'next/image'
 
-export const emailValidation = () =>{
+export const emailValidation = () => {
     const WrongEmail = document.querySelector(".WrongEmail");
     const CorrectEmail = document.querySelector(".CorrectEmail");
     const emailInput = document.querySelector(".emailInput");
@@ -20,28 +20,37 @@ export const emailValidation = () =>{
     CorrectEmail.style.display = "none";
     correctCircle.style.display = "none";
     wrongCircle.style.display = "none";
-    
-    if (emailRegex.test(emailInput.value)) {
+
+    if (emailRegex.test(emailInput.value) && emailInput.value === "client.gto@gmail.com") {
         emailBlock?.classList.add("correct")
         CorrectEmail.style.display = "flex";
         correctCircle.style.display = "flex";
         return true;
-    } 
+    }
     else {
         emailBlock?.classList.add("wrong")
         WrongEmail.style.display = "flex";
         wrongCircle.style.display = "flex";
         return false;
     }
-    
+
 }
 
-export default function EmaiInput() {
+export default function EmaiInput({ setState }: { setState: (state: boolean) => void }) {
+    const [inputValue, setInputValue] = useState("");
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const [validInput, setValidInput] = useState<boolean>(false);
+    // const emailValidation = () => {
+    //     setValidInput(emailRegex.test(inputValue) && inputValue !== "");
+    // }
     return (
         <div className='emailInput-component'>
             <div className="email-block">
-                <input className='emailInput'  placeholder='Email' onChange={emailValidation}/>
-                <Image className='correct-circle' src={check_circle} alt=''/>
+                <input className='emailInput' placeholder='Email' onChange={() => {
+                    setState(emailValidation())
+                    // setState(validInput)
+                }} />
+                <Image className='correct-circle' src={check_circle} alt='' />
                 <Image className='wrong-circle' src={cancel_circle} alt='' />
             </div>
             <div className="WrongEmail">Invalid Email</div>

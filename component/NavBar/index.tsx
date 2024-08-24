@@ -41,7 +41,6 @@ export default function NavBar() {
                         <Link href="Membership_Types">Membership Types</Link>
                         <Link href="How_to_Book">How to Book</Link>
                         <Link href="How_to_join">How to join</Link>
-                        <Link href="Second_home">Home 2</Link>
                     </div>
                 </div>
                 
@@ -60,7 +59,6 @@ export default function NavBar() {
                 <Link href="Membership_Types" onClick={toggle}>Membership Types</Link>
                 <Link href="How_to_Book" onClick={toggle} >How to Book</Link>
                 <Link href="How_to_join" onClick={toggle} >How to join</Link>
-                <Link href="Second_home" onClick={toggle} >Home 2</Link>
             </div>
         </div>
     );

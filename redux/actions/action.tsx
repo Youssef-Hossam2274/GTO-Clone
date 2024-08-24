@@ -2,12 +2,6 @@ export const CLOSE_LOGIN = "CLOSE_LOGIN"
 export const OPEN_LOGIN = "OPEN_LOGIN"
 export const LOGIN_SUBMIT = "LOGIN_SUBMIT"
 
-export const openLoginForm = () =>({
-    type: OPEN_LOGIN,
-})
-export const closeLoginForm = () =>({
-    type: CLOSE_LOGIN,
-})
 export const loginSubmitAction = (
     title:String,
     firstName:String,
