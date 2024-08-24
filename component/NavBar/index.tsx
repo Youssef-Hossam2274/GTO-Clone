@@ -43,7 +43,7 @@ export default function NavBar() {
                     <Image className='etisalate-logo' src={etisalat} alt="etisalat" style={{ width: "100px", height: "auto" }} />
                 </div>
             </div>
-            {mobileToggle && (
+            {/* {mobileToggle && ( */}
                 <div className={`mobile-links ${mobileToggle ? "active" : ""}`}>
                     <Link href="Discounted_Products" onClick={toggle}>Discounted Products</Link>
                     <Link href="Luxury_Products" onClick={toggle}>Luxury Products</Link>
@@ -52,7 +52,7 @@ export default function NavBar() {
                     <Link href="How_to_join" onClick={toggle} >How to join</Link>
                 </div>
 
-            )}
+            {/* )} */}
         </div>
     );
 }

@@ -4,12 +4,18 @@
     background-color: rgb(34, 34, 34);
     border-bottom: solid #d4a742 1px;
     padding-inline: 2vw;
-    padding-block: 1vw;
+    padding-block: 16px;
     position: relative;
-    /* transition: height 0.5s ease, padding 0.5s ease; */
+    transition: height 0.5s ease, padding 0.5s ease;
     overflow: hidden;
+    height: 150px;
 }
 
+@media (max-width: 1050px){
+    .nav-bar-component{
+        height: 110px;
+    }
+}
 .nav-bar-component.mobile {
     gap: 3vw;
     padding-bottom: 20px;
@@ -58,12 +64,14 @@
     max-width: 500px;
     width: 100%;
     margin-inline: auto;
-    /* overflow: hidden; */
+    overflow: hidden;
+    opacity: 0;
     transition: opacity 0.5s ease, max-height 0.5s ease;
 }
 
 .mobile-links.active {
     /* this class for mobile-links active */
+    opacity: 1;
 }
 
 .mobile-links a {
