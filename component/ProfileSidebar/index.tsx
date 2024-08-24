@@ -17,22 +17,22 @@ export default function ProfileSidebar() {
                     <p>Profile</p>
                 </Link>
                 
-                <Link className="quotations" href="Profile/quotations">
+                <Link className="quotations" href="Profile">
                     <Image src={quotationsImage} alt='quotationsImage'/>
                     <p>Quotations</p>
                 </Link>
                 
-                <Link className="confirmations" href="Profile/confirmations">
+                <Link className="confirmations" href="Profile">
                     <Image src={confirmationImage} alt='confirmationImage'/>
                     <p>Confirmations</p>
                 </Link>
 
-                <Link className="wallet" href="/">
+                <Link className="wallet" href="Profile">
                     <Image src={myWalletImage} alt='myWalletImage'/>
                     <p>My Wallet</p>
                 </Link>
                 
-                <Link className="chat" href="/">
+                <Link className="chat" href="Profile">
                     <Image src={prfileImage} alt='profileImage'/>
                     <p>Chat</p>
                 </Link>
