@@ -1,0 +1,46 @@
+.emailInput-component{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.email-block{
+    display: flex;
+    padding: 15px;
+    border-radius: 10px;
+    outline: none;
+    background-color: #fff;
+    justify-content: space-between;
+}
+.emailInput{
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+.correct-circle,
+.wrong-circle{
+    display: none;
+}
+
+.email-block.correct{
+    border: 2.5px solid green;
+}
+.email-block.wrong{
+    border: 2.5px solid red;
+}
+
+.WrongEmail,
+.CorrectEmail{
+    padding-inline: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    display: none;
+}
+
+.WrongEmail{
+    color: red;
+}
+.CorrectEmail{
+    color: green;
+}

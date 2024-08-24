@@ -1,9 +1,13 @@
 import React from 'react'
 import "./page.css"
-import ProfileSidebar from '@/component/ProfileSidebar'
+import ProfileTabel from "@/component/ProfileTabel"
+import ProfileCard from '@/component/ProfileCard'
+
 export default function page() {
     return (
-        <div className='profile-layout'>
+        <div className='profile-page'>
+            <ProfileCard/>
+            <ProfileTabel/>
         </div>
     )
 }
