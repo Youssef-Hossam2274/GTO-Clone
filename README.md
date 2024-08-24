@@ -30,7 +30,7 @@ Check out the live demo of the project [here](https://copy-39xzs36jq-youssef-hos
 1. Clone the repository:
    
    ```bash
-   git clone https://github.com/yourusername/gto-clone.git
+   git clone https://github.com/Youssef-Hossam2274/GTO-Clone.git
 2. Navigate to the project directory:
 
    ```bash
