@@ -58,7 +58,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center; */
     background-color: #fff;
     color: #000;
     max-width: 500px;
@@ -70,8 +69,8 @@
 }
 
 .mobile-links.active {
-    /* this class for mobile-links active */
     opacity: 1;
+    height: fit-content;
 }
 
 .mobile-links a {
