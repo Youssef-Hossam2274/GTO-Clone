@@ -2,14 +2,14 @@
 import React from "react";
 import ProfileSidebar from "@/component/ProfileSidebar";
 import style from "./globals.module.css";
-import { useSelector, UseSelector } from "react-redux";
+import { useSelector } from "react-redux";
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const { logged } = useSelector((state) => state.loginSubmit);
+  const { logged } = useSelector((state:any) => state.loginSubmit);
   if (logged === false) location.href = "./";
 
   return (

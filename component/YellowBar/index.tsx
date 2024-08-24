@@ -13,7 +13,7 @@ interface STATE {
 }
 
 export default function YellowBar() {
-    const { logged, firstName, lastName } = useSelector(state => state.loginSubmit);
+    const { logged, firstName, lastName } = useSelector((state:any) => state.loginSubmit);
     const dispatch = useDispatch();
     const [modal, setModal] = useState(false);
 
