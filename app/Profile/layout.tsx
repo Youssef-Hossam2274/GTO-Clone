@@ -9,8 +9,8 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const { logged } = useSelector((state:any) => state.loginSubmit);
-  if (logged === false) location.href = "./";
+  // const { logged } = useSelector((state:any) => state.loginSubmit);
+  // if (logged === false) location.href = "./";
 
   return (
     <div className={style.profilePage}>
